@@ -1,0 +1,127 @@
+.conteiner {
+    display: grid;
+    grid-template-columns: 520px 480px;
+    width: 1000px;
+    margin: auto;
+}
+
+.information_block {
+    box-sizing: content-box;
+    padding: 24px 38px;
+    border-left: 1px solid #E4E4E4;
+}
+
+.sting_block {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+}
+
+.sting_block p {
+    text-align: left;
+    margin: 0 0 12px 0;
+    font-size: 12px;
+}
+.action_btn{
+    width: 64px;
+    border-radius: 4px;
+    padding: 2px 8px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background: #F0F0F0;
+}
+
+.sting_block p:nth-child(2) {
+    font-size: 14px;
+}
+
+.attention_block {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    height: 56px;
+    background: #00B6FF;
+}
+
+.attention_block .icon_block {
+    width: 56px;
+    height: 56px;
+    background: #00ABF0;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+.icon_block:hover{
+    cursor: pointer;
+}
+
+.icon_block img {
+    margin: 18px 24px;
+}
+
+.attention_block p {
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    margin: 18px 0 12px 130px;
+}
+
+.options_glow_block {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 40px 70px;
+    border-left: 1px solid #E4E4E4;
+}
+
+.option_glow_item {
+    position: relative;
+    width: 97px;
+    height: 71px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icon_check{
+    position: absolute;
+    top: 8px;
+    left: 74px;
+    width: 16px;
+    height: 16px;
+}
+
+.glow_img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 97px;
+    height: 71px;
+    transition-duration: 0.2s;
+    border-radius: 2px;
+}
+
+.option_glow_item p {
+    position: relative;
+    top: -29px;
+    margin: 0px;
+    padding: 4px 0;
+    background: #000;
+    opacity: 0.6;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    transition-duration: 0.2s;
+}
+
+.option_glow_item:hover .glow_img {
+    top: -2px;
+    left: -2px;
+    width: 101px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.option_glow_item:hover p {
+    top: -31px;
+    margin: 0 -2px;
+    cursor: pointer;
+}
+
+

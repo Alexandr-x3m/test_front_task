@@ -1,0 +1,38 @@
+.conteiner {
+    position: relative;
+    margin: 30px;
+    overflow: hidden;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.slider_items_block {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.slider_item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slider_item img{
+    border-radius: 4px;
+}
+
+.nav_block {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 16px;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    margin-left: -28px;
+}
+

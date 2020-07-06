@@ -1,0 +1,194 @@
+.conteiner{
+    position: relative;
+    width: 100%;
+    height: 57px;
+    background: #1a1a1a;
+    z-index: 999;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    background: #1a1a1a;
+    z-index: 998;
+}
+.content_block{
+    display: grid;
+    grid-template-columns: 90px 1fr 38px 38px;
+    grid-column-gap: 12px;
+
+    position: relative;
+
+    margin: 0 auto;
+    width: 940px;
+    padding: 0 20px;
+    z-index: 999;
+}
+.logo{
+    max-width: 90px;
+    height: 30px;
+    margin-top: 14px;
+}
+
+
+/*----------------------------
+
+    shoping cart styles 
+
+----------------------------*/
+.shop_cart{
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    margin-top: 8px;
+    border-radius: 3px;
+    background: #1a1a1a;
+    border: 1px solid #1a1a1a;
+}
+.shop_cart .img{
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+}
+
+.shop_cart:hover{
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------
+
+    HAMBURGER GENERAL STYLES 
+
+----------------------------*/
+input[type="checkbox"] {
+    display: none;
+}
+.hamb_block label{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 20px;
+    height: 14px;
+    padding: 11px 8px;
+    border-radius: 3px;
+    border: 1px solid #1a1a1a;
+}
+.hamburger {
+    margin: 0 auto;
+    width: 20px;
+    height: 14px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 6.5px;
+}
+
+.bar3 {
+    right: 0;
+    left: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+.hamburger3 .bar1 {
+    transform-origin: 5%;
+}
+
+.hamburger3 .bar4 {
+    transform-origin: 5%;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar1{
+    transform: rotate(45deg);
+    height: 1px;
+    width: 20px;
+    left: 2.5px;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar3{
+    transform: rotate(45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar2{
+    transform: rotate(-45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar4{
+    transform: rotate(-45deg);
+    height: 1px;
+    width: 20px;
+    left: 2.5px;
+}
+
+
+/*--------------------------
+
+        HAMBURGER hover
+
+---------------------------*/
+.hamb_block label:hover{
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+
+
+
+/*----------------------------
+
+    MENU BLOCK STYLES 
+
+----------------------------*/
+.menu_conteiner{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: #212121;
+}
+.menu_conteiner a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu_conteiner ul{
+    list-style: none;
+    margin: 57px 0 0 0;
+    padding: 0;
+}
+.menu_conteiner ul li{
+    width: 320px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+.menu_conteiner ul li:hover{
+    background: #00B6FF;
+}
